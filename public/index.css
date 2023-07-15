@@ -1,0 +1,58 @@
+
+#root {
+  margin-top: 5rem;
+  min-height: 70vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(198, 1%, 29%);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.btn1 {
+  margin-left: 40px;
+
+  height: 50px;
+  width: 200px;
+}
+
+.btn2 {
+  height: 50px;
+  width: 200px;
+margin-right: 40px;
+
+}
+
+
+.startbtn {
+  height: 50px;
+  width: 200px;
+  font-size: 1.5rem;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.list {
+  margin: 0;
+  padding-left: 0;
+  margin-top: 20px;
+  background-color: #f1f1f1;
+  text-align: left;
+  list-style-position: inside;
+}
+
+.list li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
