@@ -1,58 +1,104 @@
+/* Adjust the background color and font */
+body {
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+}
 
 #root {
-  margin-top: 5rem;
-  min-height: 70vh;
-  padding: 1rem;
-  box-sizing: border-box;
+  margin: 5rem auto;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  color: hsl(198, 1%, 29%);
-  font-family: Arial, sans-serif;
-  text-align: center;
-  font-size: 1.3rem;
 }
 
-.btn1 {
-  margin-left: 40px;
-
-  height: 50px;
-  width: 200px;
+.feedback {
+  margin-top: 2rem;
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
+.feedback-text {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.btn1,
 .btn2 {
-  height: 50px;
-  width: 200px;
-margin-right: 40px;
-
-}
-
-
-.startbtn {
-  height: 50px;
-  width: 200px;
-  font-size: 1.5rem;
-  background-color: #4CAF50;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #4267B2;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.btn1:hover,
+.btn2:hover {
+  background-color: #39569c;
+}
+
+.btn1:disabled,
+.btn2:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .list {
   margin: 0;
-  padding-left: 0;
-  margin-top: 20px;
-  background-color: #f1f1f1;
-  text-align: left;
-  list-style-position: inside;
+  padding: 0;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  list-style: none;
 }
 
 .list li {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+  border-bottom: 1px solid #f0f2f5;
 }
 
 .list li:last-child {
   border-bottom: none;
+}
+
+.restart {
+  margin-top: 1rem;
+}
+
+.restart button {
+  margin-right: 0.5rem;
+  background-color: #4267B2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.restart button:hover {
+  background-color: #39569c;
 }

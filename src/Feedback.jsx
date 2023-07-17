@@ -17,7 +17,7 @@ const qandA = props.a
 
 
   return (
-    <div>
+    <div className="feedback">
     {props.feedback ? <p>That's Correct!</p> : null}
     {props.feedback === false ?
       <div className="list">
